@@ -92,13 +92,26 @@
                 <span class="dot" aria-hidden="true"></span>
               </div>
               <div class="preview-body">
-                <figure class="preview-shot">
-                  <img
-                    src="/assets/og.png"
-                    alt="Preview of Dancing Taco with Carlos on screen"
-                    loading="eager"
-                  />
-                </figure>
+                <div class="mock" role="img" aria-label="Browser preview with Carlos in the corner">
+                  <div class="mock-bar">
+                    <div class="mock-pill"></div>
+                    <div class="mock-pill"></div>
+                    <div class="mock-pill"></div>
+                  </div>
+                  <div class="mock-screen">
+                    <div class="mock-lines">
+                      <div class="mock-line w-70"></div>
+                      <div class="mock-line w-90"></div>
+                      <div class="mock-line w-55"></div>
+                      <div class="mock-line w-80"></div>
+                      <div class="mock-line w-65"></div>
+                    </div>
+                    <div class="mock-corner">
+                      <img class="mock-taco" src="/assets/taco.svg" alt="" />
+                      <span class="mock-label">Carlos</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="hero-card-footer">
@@ -111,25 +124,44 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="love">
         <div class="container">
           <div class="section-head">
             <h2>Real people love Carlos</h2>
             <p class="muted">A tiny extension with big main-character energy.</p>
           </div>
 
-          <div class="gallery">
-            <figure class="shot">
-              <img src="/assets/og.png" alt="Dancing Taco banner: Real People Love Carlos" loading="lazy" />
-            </figure>
-            <figure class="shot">
-              <img
-                src="/assets/banner-pro.png"
-                alt="Dancing Taco Pro teaser banner"
-                loading="lazy"
-              />
-            </figure>
+          <div class="testimonials">
+            <article class="quote">
+              <div class="stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p class="quote-text">“I love Carlos more than my family.”</p>
+              <p class="muted quote-by">— Hallie F.</p>
+            </article>
+
+            <article class="quote">
+              <div class="stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p class="quote-text">“🔥🔥🔥🔥🔥🔥🔥🔥 i dont use chrome tho”</p>
+              <p class="muted quote-by">— Sam J.</p>
+            </article>
+
+            <article class="quote">
+              <div class="stars" aria-label="5 out of 5 stars">
+                ★★★★★
+              </div>
+              <p class="quote-text">
+                “I installed it as a joke. Now Carlos is part of my workflow.”
+              </p>
+              <p class="muted quote-by">— A totally real person</p>
+            </article>
           </div>
+
+          <p class="muted fineprint">
+            Yes, these are real reviews — people truly love this extension.
+          </p>
         </div>
       </section>
 
@@ -158,10 +190,9 @@
               </p>
             </article>
             <article class="card">
-              <h3>Fast, responsive, accessible</h3>
+              <h3>Lightweight by design</h3>
               <p class="muted">
-                Pure HTML/CSS/JS — ships quickly, loads quickly, works
-                everywhere.
+                Does its job without getting in your way.
               </p>
             </article>
             <article class="card">
@@ -250,7 +281,7 @@
               </header>
               <ul class="checklist">
                 <li>Instant install</li>
-                <li>Core experience</li>
+                <li>Carlos in the corner</li>
                 <li>Automatic updates</li>
               </ul>
               <a
@@ -272,13 +303,14 @@
                   <span class="amount">—</span><span class="unit">/mo</span>
                 </p>
                 <p class="muted">
-                  Placeholders for future paid features — add Stripe later.
+                  More ways to customize Carlos and turn up the vibes.
                 </p>
               </header>
               <ul class="checklist">
-                <li>Extra customization</li>
-                <li>Advanced controls</li>
-                <li>Priority updates</li>
+                <li>Advanced taco customization</li>
+                <li>Dancy parties</li>
+                <li>Break dances</li>
+                <li>Early access to new updates</li>
               </ul>
               <button class="btn btn-ghost btn-block" type="button" disabled>
                 Join waitlist (soon)
@@ -329,8 +361,9 @@
             <details>
               <summary>Can this support paid plans later?</summary>
               <p class="muted">
-                Yes — the page already includes sections for pricing tiers, so
-                you can add Stripe (or any payments provider) when you’re ready.
+                Yes — the site is already structured with pricing tiers. When
+                you’re ready, you can add payments (Stripe, etc.) and a real
+                “Pro” experience.
               </p>
             </details>
             <details>
@@ -369,7 +402,7 @@
             >
               Add to Chrome
             </a>
-            <a class="btn btn-ghost" href="/privacy.html">Privacy</a>
+            <a class="btn btn-ghost" href="/privacy">Privacy</a>
           </div>
         </div>
       </section>
@@ -386,8 +419,8 @@
         </div>
 
         <div class="footer-links" aria-label="Footer">
-          <a href="/privacy.html">Privacy</a>
-          <a href="/terms.html">Terms</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
           <a
             href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
             target="_blank"
