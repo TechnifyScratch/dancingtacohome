@@ -106,6 +106,7 @@ code {
 .brand-mark {
   width: 28px;
   height: 28px;
+  object-fit: contain;
 }
 
 .brand-name {
