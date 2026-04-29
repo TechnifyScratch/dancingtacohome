@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Dancing Taco</title>
+    <meta name="description" content="Privacy policy for the Dancing Taco Chrome extension and website." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Dancing Taco home">
+          <img class="brand-mark" src="/assets/taco.svg" alt="" />
+          <span class="brand-name">Dancing Taco</span>
+        </a>
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="/">Home</a>
+          <a
+            class="btn btn-primary"
+            href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Add to Chrome
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-head">
+          <h1>Privacy Policy</h1>
+          <p class="muted">Last updated: <span id="lastUpdated"></span></p>
+        </div>
+
+        <div class="card" style="max-width: 78ch">
+          <h2 style="margin: 0; font-size: 1.2rem">Summary</h2>
+          <p class="muted" style="margin-top: 10px">
+            Dancing Taco does not run a backend service for this website today. If you later add
+            analytics, ads, payments, or accounts, update this policy accordingly.
+          </p>
+
+          <h2 style="margin: 18px 0 0; font-size: 1.2rem">Website</h2>
+          <p class="muted" style="margin-top: 10px">
+            This website is a static landing page hosted on Vercel. We do not intentionally collect
+            personal information through forms on this site.
+          </p>
+
+          <h2 style="margin: 18px 0 0; font-size: 1.2rem">Chrome Extension</h2>
+          <p class="muted" style="margin-top: 10px">
+            The extension is distributed through the Chrome Web Store. For transparency about what
+            data (if any) the extension collects or processes, refer to the Chrome Web Store listing.
+          </p>
+
+          <h2 style="margin: 18px 0 0; font-size: 1.2rem">Contact</h2>
+          <p class="muted" style="margin-top: 10px">
+            Questions? Email: <span style="font-family: var(--mono)">support@your-domain.com</span>
+            (replace with your real address).
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img class="brand-mark" src="/assets/taco.svg" alt="" />
+          <div>
+            <p class="footer-title">Dancing Taco</p>
+            <p class="muted">Privacy Policy</p>
+          </div>
+        </div>
+        <div class="footer-links" aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/terms.html">Terms</a>
+        </div>
+        <p class="muted footer-note">© <span id="year"></span> Dancing Taco.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/app.js" defer></script>
+    <script>
+      const d = new Date();
+      const el = document.getElementById("lastUpdated");
+      if (el) el.textContent = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+    </script>
+  </body>
+</html>
+
