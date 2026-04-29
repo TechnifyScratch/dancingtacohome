@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pricing — Dancing Taco</title>
+    <meta
+      name="description"
+      content="Pricing for Dancing Taco. Free now, with Pro coming soon."
+    />
+
+    <meta property="og:title" content="Pricing — Dancing Taco" />
+    <meta
+      property="og:description"
+      content="Free now, with Pro coming soon. Keep Carlos dancing in the corner."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Dancing Taco home">
+          <img class="brand-mark" src="/assets/logo.png" alt="" />
+          <span class="brand-name">Dancing Taco</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="/#features">Features</a>
+          <a href="/#how">How it works</a>
+          <a aria-current="page" href="/pricing">Pricing</a>
+          <a href="/#faq">FAQ</a>
+        </nav>
+
+        <div class="header-cta">
+          <a class="btn btn-ghost" href="/">Home</a>
+          <a
+            class="btn btn-primary"
+            href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Add to Chrome
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h1>Pricing</h1>
+            <p class="muted">
+              Free now. Pro is coming soon — with more ways to customize Carlos.
+            </p>
+          </div>
+
+          <div class="pricing reveal">
+            <article class="price-card">
+              <header>
+                <h3>Free</h3>
+                <p class="price">
+                  <span class="amount">$0</span><span class="unit">/mo</span>
+                </p>
+                <p class="muted">Everything you need to start.</p>
+              </header>
+              <ul class="checklist">
+                <li>Instant install</li>
+                <li>Carlos in the corner</li>
+                <li>Automatic updates</li>
+              </ul>
+              <a
+                class="btn btn-primary btn-block"
+                href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Add to Chrome
+              </a>
+            </article>
+
+            <article class="price-card price-card-soon" aria-label="Pro plan">
+              <header>
+                <h3>
+                  Pro <span class="pill" aria-label="Coming soon">Coming soon</span>
+                </h3>
+                <p class="price">
+                  <span class="amount">—</span><span class="unit">/mo</span>
+                </p>
+                <p class="muted">More dance moves. More customization.</p>
+              </header>
+              <ul class="checklist">
+                <li>Advanced taco customization</li>
+                <li>Dancy parties</li>
+                <li>Break dances</li>
+                <li>Early access to new updates</li>
+              </ul>
+              <button class="btn btn-ghost btn-block" type="button" disabled>
+                Join waitlist (soon)
+              </button>
+            </article>
+          </div>
+
+          <div class="card subtle-card reveal" style="max-width: 78ch; margin-top: 18px">
+            <h2 style="margin: 0; font-size: 1.1rem">No backend required</h2>
+            <p class="muted" style="margin-top: 10px">
+              This is a static site. When you’re ready to add paid plans, we can
+              wire up billing (Stripe) and a simple account system — without
+              redesigning the site.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img class="brand-mark" src="/assets/logo.png" alt="" />
+          <div>
+            <p class="footer-title">Dancing Taco</p>
+            <p class="muted">Pricing</p>
+          </div>
+        </div>
+
+        <div class="footer-links" aria-label="Footer">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+          <a href="/">Home</a>
+        </div>
+
+        <p class="muted footer-note">
+          © <span id="year"></span> Dancing Taco. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/assets/app.js" defer></script>
+  </body>
+</html>
+
