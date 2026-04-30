@@ -297,25 +297,16 @@ code {
 .hero-visual {
   position: relative;
   border-radius: 28px;
-  background: rgba(255, 255, 255, 0.10);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   overflow: hidden;
   min-height: 360px;
-}
-
-.hero-visual::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 255, 255, 0.22);
-  clip-path: polygon(62% 0%, 86% 0%, 70% 100%, 52% 100%);
-  opacity: 0.8;
 }
 
 .hero-carlos {
   position: absolute;
   left: 16%;
-  bottom: 14%;
+  bottom: 12%;
   width: min(320px, 68%);
   height: auto;
   z-index: 1;
@@ -955,7 +946,7 @@ code {
 .price-card:hover {
   transform: none;
   border-color: rgba(15, 23, 42, 0.18);
-  background: rgba(2, 6, 23, 0.01);
+  background: #ffffff;
 }
 
 .price-card header p {
