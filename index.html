@@ -58,7 +58,10 @@
         <div class="container hero-grid">
           <div class="hero-copy reveal">
             <p class="eyebrow">Chrome Extension</p>
-            <h1>Meet Carlos — the dancing taco in your corner.</h1>
+            <h1>
+              Meet <span class="accent">Carlos</span> — the dancing taco in your
+              corner.
+            </h1>
             <p class="lead">
               Dancing Taco puts a dancing taco (Carlos) in the corner of your
               screen. He shows up on your pages and does a little dance — that’s
@@ -84,93 +87,66 @@
             </ul>
           </div>
 
-          <div class="hero-card reveal" aria-label="Preview">
-            <div class="preview">
-              <div class="preview-top">
-                <span class="dot" aria-hidden="true"></span>
-                <span class="dot" aria-hidden="true"></span>
-                <span class="dot" aria-hidden="true"></span>
-              </div>
-              <div class="preview-body">
-                <div class="mock" role="img" aria-label="Browser preview with Carlos in the corner">
-                  <div class="mock-bar">
-                    <div class="mock-pill"></div>
-                    <div class="mock-pill"></div>
-                    <div class="mock-pill"></div>
-                  </div>
-                  <div class="mock-screen">
-                    <div class="mock-lines">
-                      <div class="mock-line w-70"></div>
-                      <div class="mock-line w-90"></div>
-                      <div class="mock-line w-55"></div>
-                      <div class="mock-line w-80"></div>
-                      <div class="mock-line w-65"></div>
-                    </div>
-                    <div class="mock-corner">
-                      <img class="mock-taco" src="/assets/logo.png" alt="" />
-                      <span class="mock-label">Carlos</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <aside class="hero-banner reveal" aria-label="Carlos preview">
+            <div class="stage stage--hero" role="img" aria-label="Carlos dancing under a spotlight">
+              <img class="stage-carlos" src="/assets/logo.png" alt="" />
             </div>
-            <div class="hero-card-footer">
-              <p class="muted">
-                Install in seconds. Carlos shows up right away.
-              </p>
+            <div class="hero-banner-meta">
+              <div class="hero-stars" aria-label="5 stars">
+                ★★★★★
+              </div>
+              <a class="hero-link" href="#love">Read the reviews</a>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
 
-      <section class="section alt" id="love">
-        <div class="container">
-          <div class="section-head reveal">
-            <h2>Real people love Carlos</h2>
-            <p class="muted">Highlights from Chrome Web Store reviews.</p>
+      <section class="section section-blue" id="love">
+        <div class="container reviews-grid">
+          <div class="reviews-stage reveal" aria-hidden="true">
+            <div class="stage stage--reviews">
+              <img class="stage-carlos" src="/assets/logo.png" alt="" />
+            </div>
           </div>
 
-          <div class="testimonials reveal">
-            <article class="quote">
-              <div class="stars" aria-label="5 out of 5 stars">
-                ★★★★★
-              </div>
-              <p class="quote-text">
-                “Life with Carlos is so much better than life without Carlos”
-              </p>
-              <p class="muted quote-by">— Spiritual Refreshment (Mar 15, 2025)</p>
-            </article>
+          <div class="reviews-copy">
+            <div class="reviews-head reveal">
+              <h2>Real people love Carlos</h2>
+              <div class="reviews-stars" aria-label="5 stars">★★★★★</div>
+              <p class="muted">Highlights from Chrome Web Store reviews.</p>
+            </div>
 
-            <article class="quote">
-              <div class="stars" aria-label="5 out of 5 stars">
-                ★★★★★
-              </div>
-              <p class="quote-text">“🔥🔥🔥🔥🔥🔥🔥🔥 i dont use chrome tho”</p>
-              <p class="muted quote-by">— Sam (Mar 9, 2025)</p>
-            </article>
+            <div class="reviews-list reveal" aria-label="Review highlights">
+              <blockquote class="review">
+                <p>
+                  “Life with Carlos is so much better than life without Carlos”
+                </p>
+                <cite>— Spiritual Refreshment (Mar 15, 2025)</cite>
+              </blockquote>
+              <blockquote class="review">
+                <p>“🔥🔥🔥🔥🔥🔥🔥🔥 i dont use chrome tho”</p>
+                <cite>— Sam (Mar 9, 2025)</cite>
+              </blockquote>
+              <blockquote class="review">
+                <p>
+                  “Carlos saved my life. I love him more than my family. Thank you
+                  for this taco blessing!”
+                </p>
+                <cite>— Hallie (Mar 8, 2025)</cite>
+              </blockquote>
+            </div>
 
-            <article class="quote">
-              <div class="stars" aria-label="5 out of 5 stars">
-                ★★★★★
-              </div>
-              <p class="quote-text">
-                “Carlos saved my life. I love him more than my family. Thank you
-                for this taco blessing!”
-              </p>
-              <p class="muted quote-by">— Hallie (Mar 8, 2025)</p>
-            </article>
+            <p class="muted reveal">
+              Read all reviews on the
+              <a
+                href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chrome Web Store listing
+              </a>.
+            </p>
           </div>
-
-          <p class="muted fineprint reveal">
-            Read all reviews on the
-            <a
-              href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Chrome Web Store listing
-            </a>.
-          </p>
         </div>
       </section>
 
@@ -231,6 +207,70 @@
         </div>
       </section>
 
+      <section class="section section-orange" id="settings">
+        <div class="container settings-grid">
+          <div class="settings-copy reveal">
+            <h2>Settings to help you lock in</h2>
+            <p class="muted">
+              Keep Carlos enabled, choose a corner, and set the size that feels
+              right.
+            </p>
+
+            <div class="settings-actions">
+              <a
+                class="btn btn-primary"
+                href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic?hl=en-US"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Add to Chrome
+              </a>
+              <a class="btn btn-ghost" href="/pricing">See pricing</a>
+            </div>
+
+            <p class="muted settings-note">More options coming soon.</p>
+          </div>
+
+          <div class="settings-mock reveal" role="img" aria-label="Extension settings preview">
+            <div class="settings-panel">
+              <div class="settings-panel-head">
+                <div class="settings-panel-title">Settings</div>
+              </div>
+
+              <div class="settings-panel-body">
+                <div class="settings-block">
+                  <div class="settings-row">
+                    <div class="settings-row-label">Enabled</div>
+                    <div class="toggle is-on" aria-hidden="true">
+                      <div class="toggle-knob"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="settings-block">
+                  <div class="settings-block-title">Position</div>
+                  <div class="chip-grid">
+                    <div class="chip">Top Left</div>
+                    <div class="chip is-active">Top Right</div>
+                    <div class="chip">Bottom Left</div>
+                    <div class="chip">Bottom Right</div>
+                  </div>
+                </div>
+
+                <div class="settings-block">
+                  <div class="settings-block-title">Size</div>
+                  <div class="slider" aria-hidden="true">
+                    <div class="slider-track"></div>
+                    <div class="slider-fill"></div>
+                    <div class="slider-thumb"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section alt" id="how">
         <div class="container">
           <div class="section-head reveal">
@@ -242,10 +282,9 @@
             <li>
               <div class="step-num">1</div>
               <div>
-                <h3>Install from the Chrome Web Store</h3>
+                <h3>Click “Add to Chrome”</h3>
                 <p class="muted">
-                  Send users to your official listing for trust and easy
-                  updates.
+                  Install in one click from the Chrome Web Store.
                 </p>
               </div>
             </li>
@@ -272,13 +311,12 @@
         </div>
       </section>
 
-      <section class="section" id="pricing">
+      <section class="section section-lav" id="pricing">
         <div class="container">
           <div class="section-head reveal">
-            <h2>Pricing</h2>
+            <h2>Simple pricing</h2>
             <p class="muted">
-              Free now. Built to expand into paid plans later — without
-              rewriting your landing page.
+              Free now. Pro coming soon.
             </p>
           </div>
 
