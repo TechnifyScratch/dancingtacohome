@@ -8,6 +8,14 @@ if (revealEls.length) {
     window.matchMedia &&
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  const staggerEls = Array.from(document.querySelectorAll(".stagger"));
+  for (const el of staggerEls) {
+    const children = Array.from(el.children);
+    children.forEach((child, index) => {
+      child.style.setProperty("--stagger-i", String(index));
+    });
+  }
+
   if (prefersReduced) {
     for (const el of revealEls) el.classList.add("is-visible");
   } else {
