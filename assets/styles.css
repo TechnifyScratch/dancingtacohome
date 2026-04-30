@@ -17,6 +17,7 @@
   --radius: 18px;
   --radius-sm: 12px;
   --container: 1120px;
+  --announce-h: 34px;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
@@ -127,9 +128,11 @@ code {
 }
 
 .announce-inner {
-  padding: 6px 0;
+  min-height: var(--announce-h);
+  padding: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .announce-link {
@@ -143,6 +146,7 @@ code {
   font-weight: 700;
   letter-spacing: -0.01em;
   transition: opacity 160ms ease;
+  line-height: 1;
 }
 
 .announce-link:hover {
@@ -156,7 +160,7 @@ code {
 
 .site-header {
   position: sticky;
-  top: 48px;
+  top: var(--announce-h);
   z-index: 50;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.85);
