@@ -1009,45 +1009,6 @@ code {
   opacity: 0.88;
 }
 
-.faq {
-  display: grid;
-  gap: 12px;
-}
-
-details {
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: #ffffff;
-  padding: 14px 16px;
-}
-
-summary {
-  cursor: pointer;
-  font-weight: 650;
-  letter-spacing: -0.01em;
-  list-style: none;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-details summary::after {
-  content: "+";
-  float: right;
-  color: rgba(15, 23, 42, 0.55);
-  font-family: var(--mono);
-  transition: transform 160ms ease;
-}
-
-details[open] summary::after {
-  transform: rotate(45deg);
-}
-
-details p {
-  margin-top: 10px;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
