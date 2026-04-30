@@ -117,9 +117,47 @@ code {
   z-index: 9999;
 }
 
-.site-header {
+.announce {
   position: sticky;
   top: 0;
+  z-index: 60;
+  background: rgba(8, 166, 255, 0.98);
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.announce-inner {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.announce-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.10);
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.announce-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.announce-arrow {
+  font-family: var(--mono);
+  opacity: 0.95;
+}
+
+.site-header {
+  position: sticky;
+  top: 48px;
   z-index: 50;
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.85);
