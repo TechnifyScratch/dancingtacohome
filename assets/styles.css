@@ -320,6 +320,10 @@ code {
   padding: 74px 0 22px;
 }
 
+.hero + .section {
+  padding-top: 78px;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
