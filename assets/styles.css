@@ -317,12 +317,9 @@ code {
 }
 
 .hero {
-  padding: 74px 0 22px;
+  padding: 74px 0 78px;
 }
 
-.hero + .section {
-  padding-top: 78px;
-}
 
 .hero-grid {
   display: grid;
