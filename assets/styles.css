@@ -339,12 +339,6 @@ code {
   gap: 12px;
 }
 
-.hero-stars {
-  font-family: var(--mono);
-  letter-spacing: 0.12em;
-  color: rgba(15, 23, 42, 0.70);
-}
-
 .hero-link {
   display: inline-flex;
   align-items: center;
@@ -1145,9 +1139,23 @@ code {
 
 .reviews-stars {
   margin-top: 12px;
+  display: inline-flex;
+  gap: 8px;
   font-family: var(--mono);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.12em;
   color: rgba(255, 255, 255, 0.95);
+  font-size: 1.05rem;
+}
+
+.reviews-stars .star {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  line-height: 1;
 }
 
 .reviews-head p {
