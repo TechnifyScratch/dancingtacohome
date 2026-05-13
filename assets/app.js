@@ -34,3 +34,22 @@ if (revealEls.length) {
     for (const el of revealEls) io.observe(el);
   }
 }
+
+const settingsSection = document.getElementById("settings");
+const settingsToggle = document.querySelector("[data-settings-toggle]");
+if (settingsSection && settingsToggle instanceof HTMLButtonElement) {
+  const setEnabled = (enabled) => {
+    settingsSection.dataset.enabled = enabled ? "true" : "false";
+    settingsSection.classList.toggle("settings-off", !enabled);
+    settingsToggle.classList.toggle("is-on", enabled);
+    settingsToggle.setAttribute("aria-pressed", enabled ? "true" : "false");
+  };
+
+  const initialEnabled = settingsSection.dataset.enabled !== "false";
+  setEnabled(initialEnabled);
+
+  settingsToggle.addEventListener("click", () => {
+    const enabled = settingsSection.dataset.enabled !== "true";
+    setEnabled(enabled);
+  });
+}

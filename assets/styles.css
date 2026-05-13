@@ -799,6 +799,71 @@ code {
   background: rgba(255, 255, 255, 0.16);
 }
 
+/* Settings "disabled" mode (dark purpley blue) */
+#settings.settings-off {
+  background: #1b1b3a;
+  color: #ffffff;
+}
+
+#settings.settings-off .muted {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+#settings.settings-off .settings-panel {
+  background: rgba(11, 15, 26, 0.92);
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+#settings.settings-off .settings-panel-head {
+  border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+#settings.settings-off .settings-panel-title {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+#settings.settings-off .settings-block {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+#settings.settings-off .settings-row-label,
+#settings.settings-off .settings-block-title {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+#settings.settings-off .toggle {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+#settings.settings-off .toggle .toggle-knob {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+#settings.settings-off .chip {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.86);
+}
+
+#settings.settings-off .chip.is-active {
+  background: rgba(207, 197, 255, 0.92);
+  border-color: rgba(207, 197, 255, 0.65);
+  color: rgba(15, 23, 42, 0.92);
+}
+
+#settings.settings-off .slider-track {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+#settings.settings-off .slider-fill {
+  background: rgba(207, 197, 255, 0.95);
+}
+
+#settings.settings-off .slider-thumb {
+  border-color: rgba(207, 197, 255, 0.95);
+}
+
 .section-head {
   display: grid;
   gap: 10px;
@@ -944,6 +1009,8 @@ code {
   background: rgba(15, 23, 42, 0.18);
   border: 1px solid rgba(15, 23, 42, 0.10);
   position: relative;
+  padding: 0;
+  cursor: pointer;
 }
 
 .toggle-knob {
@@ -964,6 +1031,11 @@ code {
 
 .toggle.is-on .toggle-knob {
   transform: translateX(22px);
+}
+
+.toggle:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.35);
+  outline-offset: 3px;
 }
 
 .settings-block-title {

@@ -244,7 +244,7 @@
         </div>
       </section>
 
-      <section class="section section-orange" id="settings">
+      <section class="section section-orange" id="settings" data-enabled="true">
         <div class="container settings-grid">
           <div class="settings-copy reveal">
             <h2>Settings to help you lock in</h2>
@@ -278,9 +278,15 @@
                 <div class="settings-block">
                   <div class="settings-row">
                     <div class="settings-row-label">Enabled</div>
-                    <div class="toggle is-on" aria-hidden="true">
-                      <div class="toggle-knob"></div>
-                    </div>
+                    <button
+                      class="toggle is-on"
+                      type="button"
+                      aria-pressed="true"
+                      aria-label="Toggle enabled"
+                      data-settings-toggle
+                    >
+                      <span class="toggle-knob" aria-hidden="true"></span>
+                    </button>
                   </div>
                 </div>
 
