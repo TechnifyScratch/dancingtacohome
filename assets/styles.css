@@ -290,6 +290,48 @@ code {
   background: transparent;
 }
 
+.btn-sparkle {
+  border-color: rgba(8, 166, 255, 0.35);
+  background: rgba(8, 166, 255, 0.12);
+  color: rgba(15, 23, 42, 0.92);
+}
+
+.btn-sparkle::before {
+  background: rgba(8, 166, 255, 0.22);
+}
+
+.btn-sparkle::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 999px;
+  pointer-events: none;
+  background:
+    radial-gradient(10px 10px at 20% 40%, rgba(255, 255, 255, 0.9), transparent 60%),
+    radial-gradient(8px 8px at 70% 35%, rgba(255, 255, 255, 0.75), transparent 60%),
+    radial-gradient(6px 6px at 55% 75%, rgba(255, 255, 255, 0.65), transparent 60%);
+  opacity: 0.55;
+  filter: blur(0.1px);
+  animation: sparkle 2.4s ease-in-out infinite;
+}
+
+.btn-sparkle:hover {
+  background: rgba(8, 166, 255, 0.16);
+  border-color: rgba(8, 166, 255, 0.55);
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translate3d(0, -1px, 0);
+    opacity: 0.85;
+  }
+}
+
 .btn::before {
   content: "";
   position: absolute;
@@ -1387,6 +1429,10 @@ code {
   .review,
   .hero-link {
     transition: none;
+  }
+
+  .btn-sparkle::after {
+    animation: none;
   }
 
   .card:hover,
