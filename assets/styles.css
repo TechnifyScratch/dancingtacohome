@@ -318,6 +318,20 @@ code {
 .btn-sparkle:hover {
   background: rgba(8, 166, 255, 0.16);
   border-color: rgba(8, 166, 255, 0.55);
+  box-shadow:
+    0 0 0 4px rgba(8, 166, 255, 0.14),
+    0 0 0 10px rgba(8, 166, 255, 0.06);
+}
+
+.btn-sparkle:hover::before {
+  opacity: 1;
+  transform: translateX(0) skewX(-12deg);
+}
+
+.btn-sparkle:hover::after {
+  opacity: 0.95;
+  animation-duration: 1.4s;
+  filter: blur(0.2px);
 }
 
 @keyframes sparkle {
@@ -1076,6 +1090,7 @@ code {
   background: #ffffff;
   box-shadow: none;
   transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+  position: relative;
 }
 
 .price-card:hover {
@@ -1093,6 +1108,25 @@ code {
   align-items: baseline;
   gap: 6px;
   margin: 10px 0 0;
+}
+
+.price-sub {
+  font-family: var(--mono);
+  color: rgba(15, 23, 42, 0.86);
+}
+
+.plan-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 246, 232, 0.9);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: rgba(15, 23, 42, 0.9);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  font-size: 0.9rem;
 }
 
 .amount {
@@ -1433,6 +1467,10 @@ code {
 
   .btn-sparkle::after {
     animation: none;
+  }
+
+  .btn-sparkle:hover {
+    box-shadow: none;
   }
 
   .card:hover,
