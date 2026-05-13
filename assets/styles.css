@@ -294,6 +294,25 @@ code {
   border-color: rgba(8, 166, 255, 0.35);
   background: rgba(8, 166, 255, 0.12);
   color: rgba(15, 23, 42, 0.92);
+  isolation: isolate;
+}
+
+.btn-sparkle:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.btn-sparkle .btn-label {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-sparkle::before {
+  z-index: 1;
+}
+
+.btn-sparkle::after {
+  z-index: 0;
 }
 
 .btn-sparkle::before {
