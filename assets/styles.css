@@ -24,16 +24,6 @@
     "Apple Color Emoji", "Segoe UI Emoji";
 }
 
-:root[data-theme="dark"] {
-  --bg: #070a12;
-  --panel: #0b1020;
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.72);
-  --border: rgba(255, 255, 255, 0.14);
-  --surface: rgba(255, 255, 255, 0.04);
-  --cream: rgba(255, 255, 255, 0.10);
-}
-
 * {
   box-sizing: border-box;
 }
@@ -137,11 +127,6 @@ code {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-:root[data-theme="dark"] .announce {
-  background: #050713;
-  border-bottom-color: rgba(255, 255, 255, 0.10);
-}
-
 .announce-inner {
   min-height: var(--announce-h);
   padding: 0;
@@ -180,56 +165,6 @@ code {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid var(--border);
-}
-
-:root[data-theme="dark"] .site-header {
-  background: rgba(7, 10, 18, 0.72);
-}
-
-.theme-toggle {
-  position: fixed;
-  right: 18px;
-  bottom: 18px;
-  z-index: 80;
-  width: 46px;
-  height: 46px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
-}
-
-.theme-toggle:hover {
-  background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(15, 23, 42, 0.18);
-  transform: translateY(-1px);
-}
-
-.theme-toggle:active {
-  transform: translateY(0) scale(0.98);
-}
-
-:root[data-theme="dark"] .theme-toggle {
-  background: rgba(11, 16, 32, 0.72);
-}
-
-.theme-toggle svg {
-  width: 22px;
-  height: 22px;
-  display: block;
-  stroke: rgba(15, 23, 42, 0.86);
-  fill: none;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-:root[data-theme="dark"] .theme-toggle svg {
-  stroke: rgba(255, 255, 255, 0.86);
 }
 
 .header-inner {
@@ -504,11 +439,6 @@ code {
   overflow: hidden;
 }
 
-:root[data-theme="dark"] .corner-mock {
-  border-color: rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-}
-
 .corner-mock-bar {
   display: flex;
   gap: 8px;
@@ -540,10 +470,6 @@ code {
   height: 12px;
   border-radius: 999px;
   background: rgba(15, 23, 42, 0.08);
-}
-
-:root[data-theme="dark"] .corner-line {
-  background: rgba(255, 255, 255, 0.12);
 }
 
 .corner-carlos {
@@ -809,11 +735,6 @@ code {
   background: var(--surface);
   border-top: 1px solid rgba(15, 23, 42, 0.06);
   border-bottom: 1px solid rgba(15, 23, 42, 0.06);
-}
-
-:root[data-theme="dark"] .section.alt {
-  border-top-color: rgba(255, 255, 255, 0.08);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
 }
 
 .section-blue {
@@ -1299,30 +1220,6 @@ code {
   font-size: 0.9rem;
 }
 
-:root[data-theme="dark"] .card,
-:root[data-theme="dark"] .price-card,
-:root[data-theme="dark"] details,
-:root[data-theme="dark"] .review,
-:root[data-theme="dark"] .settings-panel {
-  background: rgba(255, 255, 255, 0.04);
-}
-
-:root[data-theme="dark"] .pill {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.78);
-}
-
-:root[data-theme="dark"] .plan-badge {
-  background: rgba(255, 255, 255, 0.10);
-  border-color: rgba(255, 255, 255, 0.16);
-  color: rgba(255, 255, 255, 0.88);
-}
-
-:root[data-theme="dark"] .price-sub {
-  color: rgba(255, 255, 255, 0.86);
-}
-
 .amount {
   font-size: 2rem;
   font-weight: 800;
@@ -1677,9 +1574,4 @@ code {
     transform: none;
   }
 
-  .theme-toggle,
-  .theme-toggle:hover {
-    transform: none;
-    transition: none;
-  }
 }
