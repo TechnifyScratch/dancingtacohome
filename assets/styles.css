@@ -178,8 +178,11 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 #love { border-top: 1px solid var(--line); }
 .reviews-head { display: grid; gap: 12px; justify-items: start; }
 .reviews-store { color: var(--blue); font-size: .95rem; }
-.reviews-stars { display: flex; gap: 6px; color: #94610d; }
+.reviews-stars { display: flex; gap: 6px; color: var(--blue); }
 .review-star { width: 25px; height: 25px; fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
+.review-star:last-child { fill: url(#partial-review-star); }
+.reviews-rating { color: var(--muted); font-size: .95rem; }
+.reviews-rating strong { color: var(--ink); }
 .reviews-list { display: grid; gap: 16px; margin-top: 28px; }
 .review {
   display: flex;
