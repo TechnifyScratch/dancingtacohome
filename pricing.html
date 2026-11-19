@@ -119,25 +119,37 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-grid">
-        <div class="footer-brand">
-          <img class="brand-mark" src="/assets/logo.png" alt="" />
-          <div>
-            <p class="footer-title">Dancing Taco</p>
-            <p class="muted">Pricing</p>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="footer-title" href="/">Dancing Taco</a>
+            <p class="muted">A little dance in the corner of your browser.</p>
+            <a class="footer-social" href="https://www.youtube.com/@heyrivo" target="_blank" rel="noreferrer" aria-label="Hey Rivo on YouTube (opens in a new tab)">
+              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                <rect x="1" y="4" width="22" height="16" rx="5" fill="currentColor" />
+                <path d="M10 8.5v7l6-3.5z" fill="var(--navy)" />
+              </svg>
+            </a>
           </div>
+          <nav class="footer-links" aria-label="Product">
+            <p class="footer-heading">Product</p>
+            <a href="/#settings">Settings</a>
+            <a href="/#love">Reviews</a>
+            <a href="/pricing">Pricing</a>
+          </nav>
+          <nav class="footer-links" aria-label="Resources">
+            <p class="footer-heading">Resources</p>
+            <a href="https://chromewebstore.google.com/detail/dancing-taco/dcijcgcohbanjekdkjcjdjgcjbpjflic" target="_blank" rel="noreferrer">Chrome Web Store</a>
+            <a href="mailto:contact@heyrivo.com">Contact support</a>
+            <a href="https://tally.so/r/68reV5" target="_blank" rel="noreferrer">Beta testing</a>
+          </nav>
+          <nav class="footer-links" aria-label="Legal">
+            <p class="footer-heading">Legal</p>
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
+          </nav>
         </div>
-
-        <div class="footer-links" aria-label="Footer">
-          <a href="https://www.youtube.com/@heyrivo" target="_blank" rel="noreferrer">YouTube</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
-          <a href="/">Home</a>
-        </div>
-
-        <p class="muted footer-note">
-          © <span id="year"></span> Dancing Taco. All rights reserved.
-        </p>
+        <p class="muted footer-note">© <span id="year"></span> Dancing Taco.</p>
       </div>
     </footer>
 
