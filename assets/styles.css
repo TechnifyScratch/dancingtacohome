@@ -121,8 +121,32 @@ h1 { font-size: clamp(2.75rem, 6.4vw, 6rem); }
 h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .lead, .settings-copy p { max-width: 39ch; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.22rem); margin-top: 20px; }
 .hero-actions, .settings-actions, .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 25px; }
-.hero-users { margin-top: 16px; color: var(--muted); font-size: .9rem; }
+.hero-store-info { display: grid; gap: 10px; margin-top: 18px; }
+.hero-users { color: var(--muted); font-size: .9rem; }
 .hero-users strong { color: var(--ink); }
+.hero-store-badges { display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  font-size: .875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.store-badge:hover { text-decoration: underline; }
+.store-badge-featured { color: #06734f; }
+.store-badge-verified { color: var(--blue); }
+.store-badge svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .hero { background: #f5f8ff; overflow: clip; }
 .hero-art {
   margin: 0;
@@ -232,7 +256,6 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
   background: var(--tint);
 }
 .cta-copy { margin-top: 12px; color: var(--muted); }
-.cta-store-status { display: inline-block; margin-top: 16px; color: var(--blue); font-size: .875rem; }
 .cta-actions { margin-top: 0; }
 
 .site-footer { background: var(--navy); color: white; padding-block: 42px 24px; }
