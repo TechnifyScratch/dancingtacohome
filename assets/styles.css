@@ -94,8 +94,21 @@ button { font: inherit; }
 .header-install:hover { background: var(--blue-hover); }
 .btn-ghost { border-color: var(--line); }
 .btn-ghost:hover { background: var(--tint); border-color: #a4b8eb; }
-.btn-upgrade { background: var(--navy); color: white; }
-.btn-upgrade:hover { background: var(--blue); }
+.chrome-icon {
+  flex: none;
+  margin-inline-end: 7px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 0 1px #ffffffb3;
+}
+.btn-upgrade {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--navy);
+  color: white;
+}
+.btn-upgrade:is(:hover, :focus-visible) { background: var(--blue-hover); }
 .btn-block { width: 100%; }
 
 .hero, .section, .cta { padding-block: clamp(54px, 8vw, 105px); }
@@ -228,6 +241,21 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 
 @media (prefers-reduced-motion: no-preference) {
   .btn { transition: background-color .18s ease, border-color .18s ease; }
+  .btn-upgrade::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(110deg, transparent 25%, #7298ff66 50%, transparent 75%);
+    transform: translateX(-100%);
+  }
+  .btn-upgrade:is(:hover, :focus-visible)::before {
+    animation: upgrade-shimmer .65s ease-out both;
+  }
+  @keyframes upgrade-shimmer {
+    to { transform: translateX(100%); }
+  }
   .nav a { transition: background-color .18s ease, color .18s ease; }
   .brand-icon img { transition: transform .2s ease; }
   .brand:hover img { transform: rotate(-8deg); }
