@@ -74,7 +74,6 @@ button { font: inherit; }
 }
 .nav a:hover { background: #f4f6fa; color: var(--ink); }
 .nav [aria-current] { background: var(--tint); color: var(--blue); }
-.nav .beta-link { margin-inline-start: 6px; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -261,8 +260,25 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .legal-note { justify-self: start; background: var(--yellow); padding: 4px 9px; border-radius: 3px; transition: transform .18s ease; }
 .legal-note:hover { transform: rotate(4deg); }
 .card { padding-top: 22px; border-top: 1px solid var(--line); }
+.content-page { background: #f5f8ff; }
+.content-page h1 { font-size: clamp(2.6rem, 6vw, 4.8rem); }
+.content-stack { display: grid; gap: 16px; max-width: 760px; }
+.content-panel {
+  padding: clamp(20px, 4vw, 32px);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--paper);
+}
+.content-panel h2 { font-size: clamp(1.35rem, 3vw, 1.8rem); letter-spacing: -.03em; }
+.content-panel h2 + p { margin-top: 12px; }
+.content-panel a { color: var(--blue); }
+.content-panel ol { margin-bottom: 0; padding-left: 1.3em; }
+.content-panel li + li { margin-top: 8px; }
+.update-date { margin-bottom: 10px; color: var(--muted); font-size: .875rem; }
+.about-layout { display: grid; align-items: start; gap: 24px; }
 
 @media (min-width: 740px) {
+  .about-layout { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 24px; }
   .footer-brand { grid-column: auto; }
   .hero-grid { grid-template-columns: 1.05fr 1fr; }
@@ -275,7 +291,7 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
   .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .header-inner { grid-template-columns: minmax(0, 1fr) auto; row-gap: 8px; }
   .nav {
     grid-column: 1 / -1;
@@ -285,7 +301,6 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
     border-top: 1px solid var(--line);
     padding-top: 4px;
   }
-  .nav .beta-link { margin-inline-start: 0; }
 }
 
 @media (max-width: 400px) {
