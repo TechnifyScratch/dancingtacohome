@@ -555,24 +555,6 @@ code {
   margin-top: 22px;
 }
 
-.hero-badges {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  margin: 22px 0 0;
-  color: rgba(15, 23, 42, 0.72);
-}
-
-.hero-badges li {
-  padding: 8px 10px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(2, 6, 23, 0.015);
-  font-size: 0.95rem;
-}
-
 .hero-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -907,12 +889,6 @@ code {
   margin: 0;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 14px;
-}
-
 .pricing-hero {
   display: grid;
   grid-template-columns: 1fr;
@@ -923,6 +899,10 @@ code {
 
 .pricing-copy .muted {
   margin-top: 12px;
+}
+
+#settings {
+  scroll-margin-top: 8rem;
 }
 
 .settings-grid {
@@ -947,10 +927,8 @@ code {
   margin-top: 18px;
 }
 
-.settings-note {
-  margin-top: 14px;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.86);
+.settings-copy h2 + p {
+  margin-top: 12px;
 }
 
 .settings-mock {
@@ -1127,45 +1105,6 @@ code {
 
 .card p {
   margin-top: 8px;
-}
-
-.steps {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 14px;
-}
-
-.steps li {
-  display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 14px;
-  padding: 18px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: #ffffff;
-}
-
-.step-num {
-  width: 44px;
-  height: 44px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  font-weight: 750;
-  background: rgba(8, 166, 255, 0.18);
-  border: 1px solid rgba(8, 166, 255, 0.35);
-  color: rgba(15, 23, 42, 0.9);
-}
-
-.steps h3 {
-  margin: 0;
-  letter-spacing: -0.02em;
-}
-
-.steps p {
-  margin-top: 6px;
 }
 
 .pricing {
@@ -1458,10 +1397,6 @@ code {
     grid-template-columns: 1.05fr 0.95fr;
     gap: 26px;
     align-items: center;
-  }
-
-  .cards {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .legal-head {
