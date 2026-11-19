@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About Carlos — Dancing Taco</title>
-    <meta name="description" content="Meet the mustachioed taco who dances in the corner of your browser." />
+    <meta name="description" content="Get to know Carlos the dancing taco and watch his short film, The Origin." />
     <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/assets/styles.css" />
   </head>
@@ -44,23 +44,35 @@
       <div class="container">
         <div class="section-head">
           <h1>About Carlos</h1>
-          <p class="muted">Meet the mustachioed taco who dances in the corner of your browser.</p>
+          <p class="muted">A little biography of a taco with very busy feet.</p>
         </div>
-          <div class="about-layout">
-            <div class="content-stack">
-              <section class="content-panel" aria-labelledby="idea">
-                <h2 id="idea">The idea</h2>
-                <p>Put a tiny taco in the corner of a webpage and give him a dance. That’s the whole premise of Dancing Taco, a Chrome extension built around a character named Carlos.</p>
-              </section>
-              <section class="content-panel" aria-labelledby="corner">
-                <h2 id="corner">He fits into your browser</h2>
-                <p>Carlos can dance in whichever corner you pick. You can make him bigger, make him smaller, or hide him until you want him back. <a href="/#settings">See his settings</a>.</p>
-              </section>
-            </div>
-            <figure class="hero-art">
-              <img src="/assets/carlos-preview.png" width="3120" height="1755" alt="Carlos dancing in the upper-right corner of a YouTube page" />
-            </figure>
+        <div class="about-layout">
+          <section class="content-panel origin-film" aria-labelledby="origin-title">
+            <h2 id="origin-title">The Origin</h2>
+            <p>Every taco starts somewhere. Here’s Carlos’s story.</p>
+            <iframe
+              class="origin-player"
+              src="https://www.youtube-nocookie.com/embed/cEquIZ6jcFc"
+              title="The Origin — Carlos’s story"
+              width="560"
+              height="315"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="encrypted-media; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a href="https://www.youtube.com/watch?v=cEquIZ6jcFc">Watch The Origin on YouTube</a>
+          </section>
+          <div class="content-stack">
+            <section class="content-panel" aria-labelledby="dance-floor">
+              <h2 id="dance-floor">A very small dance floor</h2>
+              <p>Carlos has a mustache, two skinny legs, and very modest requirements for a venue. Give him the corner of a page and he’ll dance there while you read, watch videos, or get on with your day.</p>
+            </section>
+            <section class="content-panel" aria-labelledby="where-now">
+              <h2 id="where-now">Where he is now</h2>
+              <p>These days, Carlos splits his time between four corners of the browser. He’s happy to take a break whenever you need the room. When you bring him back, he picks up right where he left off.</p>
+            </section>
           </div>
+        </div>
       </div>
     </main>
 
