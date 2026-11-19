@@ -176,13 +176,33 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .slider-thumb { position: absolute; left: 62%; transform: translateX(-50%); top: 3px; background: var(--control); width: 16px; height: 16px; border-radius: 50%; }
 
 #love { border-top: 1px solid var(--line); }
-.reviews-head { display: grid; gap: 12px; }
+.reviews-head { display: grid; gap: 12px; justify-items: start; }
+.reviews-store { color: var(--blue); font-size: .95rem; }
 .reviews-stars { display: flex; gap: 6px; color: #94610d; }
 .review-star { width: 25px; height: 25px; fill: currentColor; stroke: currentColor; stroke-width: 1.4; stroke-linejoin: round; }
-.reviews-list { display: grid; gap: 24px; margin-block: 34px; }
-.review { margin: 0; padding-top: 18px; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
-.review p { font-size: clamp(1.05rem, 1.7vw, 1.3rem); line-height: 1.45; }
-.review cite { display: block; margin-top: 12px; color: var(--muted); font-style: normal; font-size: .875rem; }
+.reviews-list { display: grid; gap: 16px; margin-top: 28px; }
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+  margin: 0;
+  padding: clamp(18px, 2.5vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #f5f8ff;
+  overflow-wrap: anywhere;
+}
+.review blockquote { margin: 0; font-size: clamp(1.05rem, 1.7vw, 1.18rem); line-height: 1.55; }
+.review figcaption {
+  display: grid;
+  gap: 2px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font-size: .875rem;
+}
+.review time { color: var(--muted); }
 
 .pricing-section { background: #f5f8ff; }
 .pricing-hero { margin-bottom: clamp(26px, 5vw, 50px); }
