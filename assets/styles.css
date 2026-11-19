@@ -105,10 +105,14 @@ button { font: inherit; }
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--navy);
+  background: linear-gradient(110deg, #172b6b, #233fba 55%, #5634a6);
+  background-size: 160% 100%;
   color: white;
 }
-.btn-upgrade:is(:hover, :focus-visible) { background: var(--blue-hover); }
+.btn-upgrade:is(:hover, :focus-visible) {
+  background-position: right center;
+  box-shadow: 0 8px 20px #233fba40;
+}
 .btn-block { width: 100%; }
 
 .hero, .section, .cta { padding-block: clamp(54px, 8vw, 105px); }
@@ -119,6 +123,8 @@ h1 { font-size: clamp(2.75rem, 6.4vw, 6rem); }
 h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .lead, .settings-copy p { max-width: 39ch; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.22rem); margin-top: 20px; }
 .hero-actions, .settings-actions, .cta-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 25px; }
+.hero-users { margin-top: 16px; color: var(--muted); font-size: .9rem; }
+.hero-users strong { color: var(--ink); }
 .hero { background: #f5f8ff; overflow: clip; }
 .hero-art {
   margin: 0;
@@ -240,14 +246,20 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
   .btn { transition: background-color .18s ease, border-color .18s ease; }
+  .btn-upgrade {
+    transition: transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .2s ease, background-position .35s ease;
+  }
+  .btn-upgrade:is(:hover, :focus-visible) { transform: translateY(-3px); }
+  .btn-upgrade:active { transform: translateY(0); }
   .btn-upgrade::before {
     content: "";
     position: absolute;
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    background: linear-gradient(110deg, transparent 25%, #7298ff66 50%, transparent 75%);
+    background: linear-gradient(110deg, transparent 35%, #b0c4ff55 50%, transparent 65%);
     transform: translateX(-100%);
   }
   .btn-upgrade:is(:hover, :focus-visible)::before {
