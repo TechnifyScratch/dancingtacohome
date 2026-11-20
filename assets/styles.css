@@ -126,18 +126,6 @@ button { font: inherit; }
   background: white;
   box-shadow: 0 0 0 1px #ffffffb3;
 }
-.btn-upgrade {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: linear-gradient(110deg, #172b6b, #233fba 55%, #5634a6);
-  background-size: 160% 100%;
-  color: white;
-}
-.btn-upgrade:is(:hover, :focus-visible) {
-  background-position: right center;
-  box-shadow: 0 8px 20px #233fba40;
-}
 .btn-block { width: 100%; }
 
 .hero, .section, .cta { padding-block: clamp(54px, 8vw, 105px); }
@@ -277,7 +265,16 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .amount { font-size: 3.2rem; font-weight: 720; line-height: 1.1; letter-spacing: -.055em; }
 .unit { margin-left: 5px; color: var(--muted); }
 .price-sub { color: var(--ink); font-weight: 650; }
-.plan-badge { position: absolute; top: clamp(20px, 4vw, 36px); right: clamp(20px, 4vw, 36px); background: var(--tint); color: #173687; border-radius: 4px; padding: 3px 8px; font-size: .875rem; }
+.plan-status {
+  width: 100%;
+  margin-top: auto;
+  padding: 10px 17px;
+  border-radius: 8px;
+  background: var(--tint);
+  color: var(--muted);
+  font-weight: 650;
+  text-align: center;
+}
 .checklist { padding-left: 1.2em; margin-block: 18px 24px; }
 .checklist li + li { margin-top: 5px; }
 .cta-inner {
@@ -387,26 +384,6 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
   .footer-social:is(:hover, :focus-visible) svg { transform: translateY(-2px) scale(1.08); }
   html { scroll-behavior: smooth; }
   .btn { transition: background-color .18s ease, border-color .18s ease; }
-  .btn-upgrade {
-    transition: transform .2s cubic-bezier(.2, .8, .2, 1), box-shadow .2s ease, background-position .35s ease;
-  }
-  .btn-upgrade:is(:hover, :focus-visible) { transform: translateY(-3px); }
-  .btn-upgrade:active { transform: translateY(0); }
-  .btn-upgrade::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background: linear-gradient(110deg, transparent 35%, #b0c4ff55 50%, transparent 65%);
-    transform: translateX(-100%);
-  }
-  .btn-upgrade:is(:hover, :focus-visible)::before {
-    animation: upgrade-shimmer .65s ease-out both;
-  }
-  @keyframes upgrade-shimmer {
-    to { transform: translateX(100%); }
-  }
   .nav a { transition: background-color .18s ease, color .18s ease; }
   .brand-icon img { transition: transform .2s ease; }
   .brand:hover img { transform: rotate(-8deg); }
