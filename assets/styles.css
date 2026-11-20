@@ -290,6 +290,8 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 }
 .cta-copy { margin-top: 12px; color: var(--muted); }
 .cta-actions { margin-top: 0; }
+.merch-grid { display: grid; gap: 24px; align-items: center; }
+.merch-shop { margin-top: 20px; }
 
 .site-footer { background: var(--navy); color: white; padding-block: 42px 24px; }
 .site-footer .muted { color: #c3d0e7; }
@@ -341,6 +343,7 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 }
 
 @media (min-width: 740px) {
+  .merch-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 48px; }
   .about-layout { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); }
   .footer-grid { grid-template-columns: minmax(0, 1.6fr) repeat(3, minmax(0, 1fr)); gap: 24px; }
   .footer-brand { grid-column: auto; }
