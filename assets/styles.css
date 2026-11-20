@@ -233,6 +233,15 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .reviews-rating { color: var(--muted); font-size: .95rem; }
 .reviews-rating strong { color: var(--ink); }
 .reviews-list { display: grid; gap: 16px; margin-top: 28px; }
+.review-invite {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin-top: 24px;
+  color: var(--muted);
+}
+.review-invite .btn { color: var(--ink); }
 .review {
   display: flex;
   flex-direction: column;
