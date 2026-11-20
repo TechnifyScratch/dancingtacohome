@@ -49,6 +49,7 @@ button { font: inherit; }
 }
 .school-announcement a:hover { text-decoration: underline; }
 .school-announcement img { display: inline-block; vertical-align: -.23em; margin-inline-end: .3em; }
+.school-announcement .school-announcement-arrow { vertical-align: -.12em; margin-inline: .4em 0; }
 .school-announcement a:focus-visible { outline-offset: -4px; }
 .school-announcement.is-dismissed:not(:focus-within) a {
   transform: translateY(-100%);
