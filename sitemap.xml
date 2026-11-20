@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
+    <loc>https://www.dancingta.co/</loc>
   </url>
   <url>
-    <loc>/pricing</loc>
+    <loc>https://www.dancingta.co/pricing</loc>
   </url>
   <url>
-    <loc>/help</loc>
+    <loc>https://www.dancingta.co/help</loc>
   </url>
   <url>
-    <loc>/whats-new</loc>
+    <loc>https://www.dancingta.co/whats-new</loc>
   </url>
   <url>
-    <loc>/about-carlos</loc>
+    <loc>https://www.dancingta.co/about-carlos</loc>
   </url>
   <url>
-    <loc>/privacy</loc>
+    <loc>https://www.dancingta.co/privacy</loc>
   </url>
   <url>
-    <loc>/terms</loc>
+    <loc>https://www.dancingta.co/terms</loc>
   </url>
 </urlset>
