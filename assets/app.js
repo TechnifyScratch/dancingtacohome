@@ -1,6 +1,19 @@
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());
 
+const announcement = document.querySelector(".school-announcement");
+const firstSection = document.querySelector("main > section, main .section-head");
+if (announcement && firstSection) {
+  const updateAnnouncement = () => {
+    const sectionEnd = firstSection.getBoundingClientRect().bottom;
+    announcement.classList.toggle("is-dismissed", sectionEnd <= announcement.offsetHeight);
+  };
+
+  updateAnnouncement();
+  window.addEventListener("scroll", updateAnnouncement, { passive: true });
+  window.addEventListener("resize", updateAnnouncement);
+}
+
 const revealEls = Array.from(document.querySelectorAll(".reveal"));
 if (revealEls.length) {
   const prefersReduced =
