@@ -30,13 +30,13 @@ button { font: inherit; }
 .muted { color: var(--muted); }
 .skip-link { position: absolute; top: 8px; left: 8px; z-index: 3; background: white; padding: 10px; }
 .skip-link:not(:focus) { clip-path: inset(50%); }
-.school-announcement {
+.site-announcement {
   position: sticky;
   top: 0;
   z-index: 2;
   pointer-events: none;
 }
-.school-announcement a {
+.site-announcement a {
   display: block;
   padding: 8px var(--gutter);
   background: var(--navy);
@@ -47,11 +47,9 @@ button { font: inherit; }
   font-weight: 650;
   pointer-events: auto;
 }
-.school-announcement a:hover { text-decoration: underline; }
-.school-announcement img { display: inline-block; vertical-align: -.23em; margin-inline-end: .3em; }
-.school-announcement .school-announcement-arrow { vertical-align: -.12em; margin-inline: .4em 0; }
-.school-announcement a:focus-visible { outline-offset: -4px; }
-.school-announcement.is-dismissed:not(:focus-within) a {
+.site-announcement a:hover { text-decoration: underline; }
+.site-announcement a:focus-visible { outline-offset: -4px; }
+.site-announcement.is-dismissed:not(:focus-within) a {
   transform: translateY(-100%);
   visibility: hidden;
   pointer-events: none;
@@ -400,7 +398,7 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .school-announcement a { transition: transform .24s ease, visibility 0s; }
+  .site-announcement a { transition: transform .24s ease, visibility 0s; }
   .footer-social svg { transition: transform .18s ease, color .18s ease; }
   .footer-social:is(:hover, :focus-visible) svg { transform: translateY(-2px) scale(1.08); }
   html { scroll-behavior: smooth; }

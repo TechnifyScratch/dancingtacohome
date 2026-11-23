@@ -1,7 +1,7 @@
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());
 
-const announcement = document.querySelector(".school-announcement");
+const announcement = document.querySelector(".site-announcement");
 const firstSection = document.querySelector("main > section, main .section-head");
 if (announcement && firstSection) {
   const updateAnnouncement = () => {
