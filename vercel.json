@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/submit-art",
+      "destination": "https://tally.so/r/ArBLDz",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
