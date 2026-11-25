@@ -329,36 +329,50 @@ h2 { font-size: clamp(2rem, 4.3vw, 3.5rem); }
 .content-panel li + li { margin-top: 8px; }
 .update-date { margin-bottom: 10px; color: var(--muted); font-size: .875rem; }
 .about-layout { display: grid; align-items: start; gap: 24px; }
-.welcome-hero { padding-bottom: clamp(112px, 12vw, 160px); }
+.welcome-page {
+  --pointer-inset: clamp(6px, 1.2vmin, 14px);
+  --pointer-width: clamp(84px, 15vmin, 144px);
+  --pointer-height: clamp(68px, 12vmin, 112px);
+  --pointer-arrow-size: clamp(18px, 3.5vmin, 28px);
+}
+.welcome-hero { padding-bottom: calc(var(--pointer-height) + var(--pointer-inset) + var(--pointer-arrow-size) + 44px); }
+.welcome-hero .hero-grid > * { min-width: 0; }
 .welcome-tip p + p, .welcome-release h3 + p { margin-top: 12px; }
 .welcome-release { max-width: 760px; }
 .welcome-release h3 { font-size: 1.5rem; }
 .welcome-pointer {
   position: fixed;
-  right: 12px;
-  bottom: 12px;
+  right: max(var(--pointer-inset), env(safe-area-inset-right));
+  bottom: max(var(--pointer-inset), env(safe-area-inset-bottom));
   z-index: 2;
-  display: grid;
-  justify-items: end;
-  width: 112px;
-  height: 90px;
-  padding: 6px;
+  width: var(--pointer-width);
+  height: var(--pointer-height);
   border: 2px dashed var(--blue);
   border-radius: 12px;
   color: var(--blue);
   pointer-events: none;
 }
 .welcome-pointer[hidden] { display: none; }
-.welcome-pointer span {
+.welcome-pointer-label {
   position: absolute;
-  right: 8px;
-  bottom: calc(100% + 5px);
+  right: 0;
+  bottom: calc(100% + 3px);
+  display: grid;
+  justify-items: end;
+  width: max-content;
+  max-width: calc(100vw - 2 * var(--pointer-inset) - 8px);
+}
+.welcome-pointer-label span {
   padding: 4px 8px;
   border-radius: 6px;
   background: var(--navy);
   color: white;
   font-size: .875rem;
-  white-space: nowrap;
+}
+.welcome-pointer-label svg {
+  width: var(--pointer-arrow-size);
+  height: var(--pointer-arrow-size);
+  margin-right: calc((var(--pointer-width) - var(--pointer-arrow-size)) / 2 - 2px);
 }
 .contest-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
 .contest-prize-image { width: min(100%, 440px); height: auto; border: 1px solid var(--line); border-radius: 12px; }
