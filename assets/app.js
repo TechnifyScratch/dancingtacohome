@@ -15,6 +15,14 @@ if (announcement && firstSection) {
 }
 
 const revealEls = Array.from(document.querySelectorAll(".reveal"));
+const welcomePointer = document.querySelector(".welcome-pointer");
+const welcomeHero = document.querySelector(".welcome-hero");
+if (welcomePointer && welcomeHero && "IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(([entry]) => {
+    welcomePointer.hidden = !entry.isIntersecting;
+  });
+  observer.observe(welcomeHero);
+}
 if (revealEls.length) {
   const prefersReduced =
     typeof window !== "undefined" &&
